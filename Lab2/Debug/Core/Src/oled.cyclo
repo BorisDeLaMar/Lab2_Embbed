@@ -1,0 +1,13 @@
+oled.c:9:13:oled_WriteCommand	1
+oled.c:13:6:oled_Reset	1
+oled.c:19:9:oled_Init	1
+oled.c:63:6:oled_Fill	3
+oled.c:72:6:oled_UpdateScreen	2
+oled.c:84:6:oled_DrawPixel	5
+oled.c:100:6:oled_DrawHLine	2
+oled.c:105:6:oled_DrawVLine	2
+oled.c:110:6:oled_DrawSquare	1
+oled.c:116:6:oled_WriteChar	6
+oled.c:140:6:oled_WriteString	3
+oled.c:150:6:oled_SetCursor	1
+oled.c:155:6:oled_DrawBitmap	3

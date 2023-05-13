@@ -1,0 +1,635 @@
+15:24:21 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+15:24:27 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+10:43:15 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+10:43:54 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+10:44:11 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+10:44:36 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F427xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/calc.d" -MT"Core/Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/calc.o"
+../Core/Src/calc.c: In function 'write_number':
+../Core/Src/calc.c:11:3: error: 'isNegative' undeclared (first use in this function)
+   11 |   isNegative = 1;
+      |   ^~~~~~~~~~
+../Core/Src/calc.c:11:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/calc.c:23:6: error: 'isNevative' undeclared (first use in this function)
+   23 |  if (isNevative == 1) {
+      |      ^~~~~~~~~~
+../Core/Src/calc.c:9:11: warning: unused variable 'isMinus' [-Wunused-variable]
+    9 |  uint16_t isMinus = 0;
+      |           ^~~~~~~
+make: *** [Core/Src/subdir.mk:58: Core/Src/calc.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+10:45:01 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F427xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/calc.d" -MT"Core/Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/calc.o"
+../Core/Src/calc.c: In function 'write_number':
+../Core/Src/calc.c:23:6: error: 'isNevative' undeclared (first use in this function); did you mean 'isNegative'?
+   23 |  if (isNevative == 1) {
+      |      ^~~~~~~~~~
+      |      isNegative
+../Core/Src/calc.c:23:6: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/calc.c:9:11: warning: variable 'isNegative' set but not used [-Wunused-but-set-variable]
+    9 |  uint16_t isNegative = 0;
+      |           ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:58: Core/Src/calc.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+10:45:23 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F427xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/calc.d" -MT"Core/Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/calc.o"
+arm-none-eabi-gcc -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\shume\STM32CubeIDE\workspace_1.12.0\Lab2\STM32F427VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-size   Lab2.elf 
+arm-none-eabi-objdump -h -S  Lab2.elf  > "Lab2.list"
+   text	   data	    bss	    dec	    hex	filename
+  21176	     36	   2756	  23968	   5da0	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.list
+ 
+10:45:47 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21176	     36	   2756	  23968	   5da0	Lab2.elf
+Finished building: default.size.stdout
+ 
+10:50:43 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+10:52:13 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+10:52:54 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+10:53:30 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21176	     36	   2756	  23968	   5da0	Lab2.elf
+Finished building: default.size.stdout
+ 
+10:56:18 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc "../Src/fonts.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/fonts.d" -MT"Src/fonts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/fonts.o"
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+arm-none-eabi-gcc "../Src/i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c.d" -MT"Src/i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/i2c.o"
+arm-none-eabi-gcc "../Src/kb.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/kb.d" -MT"Src/kb.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/kb.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:112:4: warning: implicit declaration of function 'run' [-Wimplicit-function-declaration]
+  112 |    run();
+      |    ^~~
+../Src/main.c: In function 'KB_Test':
+../Src/main.c:185:28: warning: 'Key' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  185 |    } else if ( Key == 0x04 && Key != OldKey) {
+      |                ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Src/oled.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/oled.d" -MT"Src/oled.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/oled.o"
+arm-none-eabi-gcc "../Src/pca9538.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/pca9538.d" -MT"Src/pca9538.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/pca9538.o"
+arm-none-eabi-gcc "../Src/sdk_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sdk_uart.d" -MT"Src/sdk_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sdk_uart.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Src/usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/usart.d" -MT"Src/usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/usart.o"
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20680	     44	   2756	  23480	   5bb8	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:01:58 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:119:6: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+  119 |      oled_Reset();
+      |      ^~~~~~~~~~
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'KB_Test':
+../Src/main.c:186:28: warning: 'Key' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  186 |    } else if ( Key == 0x04 && Key != OldKey) {
+      |                ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20676	     44	   2756	  23476	   5bb4	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:03:30 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:124:6: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+  124 |      oled_Reset();
+      |      ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20676	     44	   2756	  23476	   5bb4	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:04:21 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:40:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   40 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20680	     44	   2756	  23480	   5bb8	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:07:49 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20680	     44	   2756	  23480	   5bb8	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:08:09 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20680	     44	   2756	  23480	   5bb8	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+11:30:11 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20680	     44	   2756	  23480	   5bb8	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+11:34:02 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+../Src/calc.c: At top level:
+../Src/calc.c:37:2: error: unterminated comment
+   37 | }/*
+      |  ^
+make: *** [Src/subdir.mk:58: Src/calc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:34:20 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17628	     44	   2756	  20428	   4fcc	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:35:39 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'KB_Test':
+../Src/main.c:187:28: warning: 'Key' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  187 |    } else if ( Key == 0x04 && Key != OldKey) {
+      |                ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:36:55 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'KB_Test':
+../Src/main.c:187:28: warning: 'Key' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  187 |    } else if ( Key == 0x04 && Key != OldKey) {
+      |                ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:38:13 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'KB_Test':
+../Src/main.c:187:28: warning: 'Key' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  187 |    } else if ( Key == 0x04 && Key != OldKey) {
+      |                ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:38:58 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+11:39:21 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-size   Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21176	     36	   2756	  23968	   5da0	Lab2.elf
+Finished building: default.size.stdout
+ 
+11:39:45 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+11:40:38 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:41:08 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20132	     44	   2756	  22932	   5994	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+11:41:59 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'KB_Test':
+../Src/main.c:186:28: warning: 'Key' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  186 |    } else if ( Key == 0x04 && Key != OldKey) {
+      |                ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20680	     44	   2756	  23480	   5bb8	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:55:18 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+../Src/calc.c:46:4: error: 'col' undeclared (first use in this function)
+   46 |    col = Check_Row(rows[row_ind]);
+      |    ^~~
+../Src/calc.c:46:4: note: each undeclared identifier is reported only once for each function it appears in
+../Src/calc.c:39:48: warning: unused variable 'checkedRow' [-Wunused-variable]
+   39 |  uint8_t rows[4] = { 0xF7, 0x7B, 0x3D, 0x1E }, checkedRow;
+      |                                                ^~~~~~~~~~
+make: *** [Src/subdir.mk:58: Src/calc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:55:37 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'KB_Test':
+../Src/main.c:186:28: warning: 'Key' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  186 |    } else if ( Key == 0x04 && Key != OldKey) {
+      |                ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20680	     44	   2756	  23480	   5bb8	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:56:16 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20680	     44	   2756	  23480	   5bb8	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+11:59:56 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20680	     44	   2756	  23480	   5bb8	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+12:05:38 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20684	     44	   2756	  23484	   5bbc	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+12:09:53 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20680	     44	   2756	  23480	   5bb8	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+12:10:51 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+../Src/calc.c:162:5: warning: case value '11' not in enumerated type 'enum Mode' [-Wswitch]
+  162 |     case FUN:
+      |     ^~~~
+../Src/calc.c:186:4: error: case label not within a switch statement
+  186 |    case SECOND_OPERAND:
+      |    ^~~~
+../Src/calc.c: At top level:
+../Src/calc.c:228:1: error: expected identifier or '(' before '}' token
+  228 | }
+      | ^
+make: *** [Src/subdir.mk:58: Src/calc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:42:13 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20692	     44	   2756	  23492	   5bc4	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+12:43:38 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20680	     44	   2756	  23480	   5bb8	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
+12:45:29 **** Incremental Build of configuration Debug for project SDK_Keyboard ****
+make all 
+arm-none-eabi-gcc "../Src/calc.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/calc.d" -MT"Src/calc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/calc.o"
+../Src/calc.c: In function 'run':
+../Src/calc.c:34:2: warning: implicit declaration of function 'oled_Reset' [-Wimplicit-function-declaration]
+   34 |  oled_Reset();
+      |  ^~~~~~~~~~
+arm-none-eabi-gcc -o "SDK_Keyboard.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDK_Keyboard.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDK_Keyboard.elf
+ 
+arm-none-eabi-size   SDK_Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20692	     44	   2756	  23492	   5bc4	SDK_Keyboard.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  SDK_Keyboard.elf  > "SDK_Keyboard.list"
+Finished building: SDK_Keyboard.list
+ 
+arm-none-eabi-objcopy  -O ihex  SDK_Keyboard.elf  "SDK_Keyboard.hex"
+Finished building: SDK_Keyboard.hex
+ 
